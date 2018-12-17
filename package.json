@@ -1,0 +1,74 @@
+{
+  "name": "myre",
+  "version": "0.0.1",
+  "description": "myre CLI",
+  "private": true,
+  "bin": {
+    "myre": "bin/myre"
+  },
+  "scripts": {
+    "format": "prettier --write **/*.{js,ts,tsx,json}",
+    "test": "ava",
+    "watch": "ava --watch",
+    "coverage": "nyc ava",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release",
+    "commit": "git-cz"
+  },
+  "files": [
+    "tsconfig.json",
+    "LICENSE",
+    "readme.md",
+    "docs",
+    "bin",
+    "src"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "gluegun": "next",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.1",
+    "@semantic-release/git": "^7.0.5",
+    "@semantic-release/release-notes-generator": "^7.1.4",
+    "@types/node": "^10.12.15",
+    "ava": "^1.0.1",
+    "commitizen": "^3.0.5",
+    "conventional-changelog-eslint": "^3.0.1",
+    "cz-adapter-eslint": "^0.1.2",
+    "nyc": "^13.1.0",
+    "prettier": "^1.15.3",
+    "semantic-release": "^15.13.1",
+    "travis-deploy-once": "^5.0.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-adapter-eslint"
+    }
+  },
+  "greenkeeper": {
+    "commitMessages": {
+      "initialBadge": "Docs: add Greenkeeper badge",
+      "initialDependencies": "Upgrade: update dependencies",
+      "initialBranches": "Update: whitelist greenkeeper branches",
+      "dependencyUpdate": "Fix: update ${dependency} to version ${version}",
+      "devDependencyUpdate": "Upgrade: update ${dependency} to version ${version}",
+      "dependencyPin": "Update: pin ${dependency} to ${oldVersionResolved}",
+      "devDependencyPin": "Update: pin ${dependency} to ${oldVersionResolved}",
+      "closes": "\n\nCloses #${number}"
+    },
+    "prTitles": {
+      "initialPR": "Update dependencies to enable Greenkeeper!!!",
+      "initialPrBadge": "Add badge to enable Greenkeeper!!!!",
+      "initialPrBadgeOnly": "Add Greenkeeper badge!!!",
+      "initialSubgroupPR": "Update dependencies for ${group}!!!",
+      "basicPR": "Update ${dependency} to the latest!!!",
+      "groupPR": "Update ${dependency} in group ${group} to the latest!!!!"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

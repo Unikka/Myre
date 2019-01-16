@@ -37,7 +37,7 @@
     "ava": "^1.0.1",
     "commitizen": "^3.0.5",
     "conventional-changelog-eslint": "^3.0.1",
-    "cz-adapter-eslint": "^0.1.2",
+    "cz-adapter-eslint": "^0.2.0",
     "nyc": "^13.1.0",
     "prettier": "^1.15.3",
     "semantic-release": "^15.13.1",

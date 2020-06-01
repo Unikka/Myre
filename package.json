@@ -38,7 +38,7 @@
     "commitizen": "^4.0.0",
     "conventional-changelog-eslint": "^3.0.1",
     "cz-adapter-eslint": "^0.3.0",
-    "nyc": "^14.0.0",
+    "nyc": "^15.1.0",
     "prettier": "^2.0.0",
     "semantic-release": "^15.13.1",
     "travis-deploy-once": "^5.0.11"
